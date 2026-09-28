@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stett support
 
-## Getting Started
+The public tracker for [Stett](https://www.stett.dev), the review-first client for GitHub. Bugs, ideas and questions all land here, and we answer them here.
 
-First, run the development server:
+## How to reach us
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **In the app:** click the **?** icon in the top bar ("Help and feedback"). It files an issue in this repo for you, with the page you were on attached.
+- **On GitHub:** [open an issue](https://github.com/stett-dev/stett-support/issues/new) in this repo.
+- **By email:** [team@stett.dev](mailto:team@stett.dev), for anything you'd rather not post in public, such as billing, your account or your data.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Before you post
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Issues here are public. Don't paste tokens, private code, customer data or screenshots of private repositories. Email us instead and we'll take it from there.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Found a security problem?** Email [team@stett.dev](mailto:team@stett.dev). Please don't open an issue for it.
 
-## Learn More
+## What an in-app report includes
 
-To learn more about Next.js, take a look at the following resources:
+Your message, then a short footer with your GitHub login, your plan, the page you were on, the app version and your browser's user agent. That's all; nothing else from your account is attached.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Labels
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Label | Meaning |
+| --- | --- |
+| `type:bug`, `type:idea`, `type:question` | What kind of report it is |
+| `source:in-app` | Filed from the Help button in the app |
+| `needs-triage` | Not looked at yet |
+| `p0`, `p1`, `p2` | How urgent it is once triaged, `p0` highest |
+| `area:pr`, `area:issues`, `area:notifications`, `area:discussions`, `area:billing` | The part of the app it's about |
 
-## Deploy on Vercel
+## What happens next
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We read every report, usually within one working day. We label it, reply on the issue and keep it updated. When we close it, the last comment says whether it was fixed, answered or not planned.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## About the code in this repo
+
+The small Next.js app here is a sandbox we use to test Stett against a real repository, for things like stacked pull requests. It isn't part of Stett, and you don't need it to report anything.
